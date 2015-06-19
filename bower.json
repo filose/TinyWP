@@ -1,0 +1,19 @@
+{
+  "name": "popcorn-starter-theme",
+  "version": "0.0.0",
+  "authors": [
+    "popcorn"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5",
+    "breakpoint-sass": "~2.6.1"
+  }
+}
