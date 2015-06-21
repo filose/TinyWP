@@ -3,19 +3,19 @@
 /* ==========================================================================
 CSS
 ========================================================================== */
-function popcorn_styles() {
+function tiny_styles() {
   /* Register CSS */
   wp_register_style('style', get_template_directory_uri() . '/style.css');
   /* Enqueue CSS */
   wp_enqueue_style('style');
 }
 
-add_action( 'wp_enqueue_scripts', 'popcorn_styles' );
+add_action( 'wp_enqueue_scripts', 'tiny_styles' );
 
 /* ==========================================================================
 JS
 ========================================================================== */
-function popcorn_scripts() {
+function tiny_scripts() {
   /* Register JS */
   wp_register_script('main', get_template_directory_uri() . '/js/script.min.js', array('jquery'), '1.0.0', true);
   /* Enqueue JS */
@@ -23,7 +23,7 @@ function popcorn_scripts() {
   wp_enqueue_script('main');
 }
 
-add_action( 'wp_enqueue_scripts', 'popcorn_scripts' );
+add_action( 'wp_enqueue_scripts', 'tiny_scripts' );
 
 /* ==========================================================================
 NAVS
@@ -39,7 +39,7 @@ function register_my_menu() {
 WIDGETS
 ========================================================================== */
 
-function popcorn_widgets_init() {
+function tiny_widgets_init() {
 
   register_sidebar( array(
     'name'          => 'Footer 1',
@@ -69,7 +69,7 @@ function popcorn_widgets_init() {
   ));
 
 }
-add_action( 'widgets_init', 'popcorn_widgets_init' );
+add_action( 'widgets_init', 'tiny_widgets_init' );
 
 /* ==========================================================================
 EMBED WRAPPER
