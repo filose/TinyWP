@@ -6,8 +6,6 @@
 node_modules
 npm-debug.log
 
-# bower stuff
-bower_components
-
 # sass source maps
+*.map
 css/*.map

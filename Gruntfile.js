@@ -27,7 +27,9 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer-core')({browsers: 'last 1 version'})
+          require('autoprefixer')({
+            browsers: ['last 2 versions']
+          })
         ]
       },
       dist: {
@@ -36,7 +38,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      scripts: {
+      js: {
         files: ['js/*.js'],
         tasks: ['uglify'],
         options: {
@@ -54,6 +56,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['uglify', 'sass', 'watch', 'postcss']);
+  grunt.registerTask('default', ['uglify', 'sass', 'postcss', 'watch']);
 
 };
